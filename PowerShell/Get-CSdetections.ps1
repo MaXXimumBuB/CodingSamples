@@ -9,6 +9,8 @@
     Author: Chris Cardi
     Date: 7/14/24
 
+    *Any specifically identifying code has been changed to a random value for security.*
+
 .EXAMPLE
     $item = @()
     foreach ($detection in $detections) { 

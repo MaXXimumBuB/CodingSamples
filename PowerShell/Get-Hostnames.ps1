@@ -9,6 +9,8 @@
     Author: Chris Cardi
     Date: 7/14/24
     'Find-Computer' is a cmdlet written by a colleague to assist with locating a machine across multiple domains.
+    
+    *Any specifically identifying code has been changed to a random value for security.*
 #>
 
 # Setup files for input and output

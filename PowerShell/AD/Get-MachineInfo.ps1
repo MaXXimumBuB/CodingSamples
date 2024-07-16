@@ -12,10 +12,10 @@
 #>
 
 # Setup input and output information
-$getFile = "C:\temp\names.txt"
+$getFile = "C:\PATH_TO\FILE"
 $computers = get-content $getFile
 $fileDate = Get-Date -UFormat '%Y%m%d_%H%M%S'
-$outputFile = "C:\temp\MysteryMachines\$($FileDate)_MachineInfo_Results.xlsx"
+$outputFile = "C:\PATH_TO\\$($FileDate)_FILE"
 
 # Create Arrays to collect information
 $MysteryMachines = @()

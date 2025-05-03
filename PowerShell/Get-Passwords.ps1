@@ -1,19 +1,19 @@
 <#
 .SYNOPSIS
-This script authenticates into the 1Password CLI and audits login credentials stored in a specified vault for weak or temporary password patterns.
+    This script authenticates into the 1Password CLI and audits login credentials stored in a specified vault for weak or temporary password patterns.
 
 .DESCRIPTION
-- Signs in to 1Password using CLI.
-- Lists all login items in the specified vault.
-- For each login item, retrieves the associated username and password.
-- Searches for passwords that match specific weak patterns ("CHANGEME" or "CHANGEME2", case-insensitive).
-- If a weak password is found, displays relevant details in the console and stores them in an array.
-- Exports the findings to an Excel spreadsheet on the user's desktop using the ImportExcel module.
+    - Signs in to 1Password using CLI.
+    - Lists all login items in the specified vault.
+    - For each login item, retrieves the associated username and password.
+    - Searches for passwords that match specific weak patterns ("CHANGEME" or "CHANGEME2", case-insensitive).
+    - If a weak password is found, displays relevant details in the console and stores them in an array.
+    - Exports the findings to an Excel spreadsheet on the user's desktop using the ImportExcel module.
 
 .NOTES
-- Requires 1Password CLI (`op`) to be installed and signed in.
-- Requires the PowerShell `ImportExcel` module to export results.
-- Customize `$vaultName`, `$output`, and regex patterns for other use cases.
+    - Requires 1Password CLI (`op`) to be installed and signed in.
+    - Requires the PowerShell `ImportExcel` module to export results.
+    - Customize `$vaultName`, `$output`, and regex patterns for other use cases.
     Author: Chris Cardi
     Date: 5/3/2025
 #>

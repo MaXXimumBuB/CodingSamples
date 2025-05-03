@@ -14,6 +14,7 @@
     - Requires 1Password CLI (`op`) to be installed and signed in.
     - Requires the PowerShell `ImportExcel` module to export results.
     - Customize `$vaultName`, `$output`, and regex patterns for other use cases.
+    
     Author: Chris Cardi
     Date: 5/3/2025
 #>

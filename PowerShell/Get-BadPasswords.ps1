@@ -26,6 +26,11 @@ Invoke-Expression $(op signin)
 $vaultName = "CHANGEME"
 $output = "C:\CHANGEME\BadPasswords.xlsx"
 
+# Delete file if it already exists
+if ($output) {
+    Remove-Item $output
+}
+
 # Get login items
 $items = op item list --vault $vaultName --categories Login --format json | ConvertFrom-Json #this makes it an object to retrieve info from
 
